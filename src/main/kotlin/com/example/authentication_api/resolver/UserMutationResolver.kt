@@ -6,6 +6,7 @@ import com.example.authentication_api.repository.UserRepository
 import org.springframework.stereotype.Component
 
 @Component
+
 class UserMutationResolver(private val userRepository: UserRepository) : GraphQLMutationResolver {
     fun createUser(phoneNumber: String, password: String,
                    firstName: String, lastName: String): User {
