@@ -1,4 +1,4 @@
-package com.example.authentication_api.config
+package com.example.gitauthentication_api.config
 
 import com.coxautodev.graphql.tools.SchemaParser
 import com.example.authentication_api.resolver.UserMutationResolver
