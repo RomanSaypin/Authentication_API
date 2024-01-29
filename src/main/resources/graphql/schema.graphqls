@@ -1,0 +1,18 @@
+graphql
+type Query {
+    getUserById(id: ID!): User
+    getUserByPhoneNumber(phoneNumber: String!): User
+    getUserByName(firstName: String!, lastName: String!): User
+}
+
+type Mutation {
+    createUser(phoneNumber: String!, firstName: String!, lastName: String!, password: String!): User
+    updateUser(id: ID!, firstName: String!, lastName: String!): User
+}
+
+type User {
+    id: ID!
+    phoneNumber: String!
+    firstName: String!
+    lastName: String!
+}
